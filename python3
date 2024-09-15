@@ -1,0 +1,17 @@
+Write a Python function to invert a dictionary (swap keys and values).
+Input: {'a': 1, 'b': 2, 'c': 3}
+
+Solution
+
+def invert(d):
+    inverted_dict = {v: k for k, v in d.items()}
+    return inverted_dict
+
+input = {'a': 1, 'b': 2, 'c': 3}
+inverted = invert(input)
+print(inverted)
+
+
+
+
+Output: {1: 'a', 2: 'b', 3: 'c'}
