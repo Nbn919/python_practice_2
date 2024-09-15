@@ -1,0 +1,18 @@
+Write a Python function to merge two dictionaries.
+Input: {'a': 1, 'b': 2}, {'b': 3, 'c': 4}
+
+Solution
+
+def merge(a,b):
+    merged_dict = {**a, **b}
+    return merged_dict
+
+a = {'a': 1, 'b': 2}
+b = {'b': 3, 'c': 4}
+
+merged = merge(a, b)
+print(merged)
+
+
+
+Output: {'a': 1, 'b': 3, 'c': 4}
