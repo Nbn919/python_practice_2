@@ -1,0 +1,16 @@
+Write a Python function to find the key with the maximum value in a dictionary.
+Input: {'a': 10, 'b': 20, 'c': 5}
+
+Solution
+
+def max_value(a):
+    max_key=max(a, key=a.get)
+    return max_key
+
+input = {'a': 10, 'b': 20, 'c': 5}
+max_key = max_value(input)
+print(max_key)
+
+
+
+Output: 'b'
